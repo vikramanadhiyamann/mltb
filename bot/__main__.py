@@ -201,7 +201,7 @@ def main():
                 if ospath.isfile(".restartmsg"):
                     with open(".restartmsg") as f:
                         chat_id, msg_id = map(int, f)
-                    msg = 'Restarted successfully!'
+                    msg = '━━━━━━━━━━━━━━━━━━\nRestarted successfully\n━━━━━━━━━━━━━━━━━━'
                 else:
                     msg = 'Bot Restarted!'
                 for tag, links in data.items():
@@ -209,7 +209,7 @@ def main():
                      for index, link in enumerate(links, start=1):
                          msg += f" <a href='{link}'>{index}</a> |"
                          if len(msg.encode()) > 4000:
-                             if 'Restarted successfully!' in msg and cid == chat_id:
+                             if '━━━━━━━━━━━━━━━━━━\n\nRestarted successfully\n\n━━━━━━━━━━━━━━━━━━' in msg and cid == chat_id:
                                  bot.editMessageText(msg, chat_id, msg_id, parse_mode='HTMl')
                                  osremove(".restartmsg")
                              else:
