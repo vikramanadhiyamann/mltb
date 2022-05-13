@@ -178,7 +178,6 @@ botcmds = [
         (f'{BotCommands.WatchCommand}','Mirror yt-dlp supported link'),
         (f'{BotCommands.ZipWatchCommand}','Mirror yt-dlp supported link as zip'),
         (f'{BotCommands.CloneCommand}','Copy file/folder to Drive'),
-        (f'{BotCommands.CountCommand}','Count file/folder of Drive'),
         (f'{BotCommands.DeleteCommand}','Delete file/folder from Drive'),
         (f'{BotCommands.CancelMirror}','Cancel a task'),
         (f'{BotCommands.CancelAllCommand}','Cancel all downloading tasks'),
