@@ -39,4 +39,4 @@ jobs:
           file: ./Dockerfile
           push: true
           platforms: linux/amd64
-          tags: ghcr.io/rootalt/anus:latest
+          tags: ghcr.io/rootalt/anus2:latest
