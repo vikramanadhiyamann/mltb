@@ -48,18 +48,18 @@ def stats(update, context):
     mem_u = get_readable_file_size(memory.used)
     stats = f'<b>Bot Uptime:</b> {currentTime}\n'\
             f'<b>Disk Space:</b> {total}\n'\
-            f'<b>Used:</b> {used} | <b>Free:</b> {free}\n\━━━━━━━━━━━━━━━━━━━━n'\
+            f'<b>Used:</b> {used} | <b>Free:</b> {free}\n━━━━━━━━━━━━━━━━━━━━━━━━\n'\
             f'<b>Upload:</b> {sent}\n'\
-            f'<b>Download:</b> {recv}\n━━━━━━━━━━━━━━━━━━━━\n'\
+            f'<b>Download:</b> {recv}\n━━━━━━━━━━━━━━━━━━━━━━━━\n'\
             f'<b>CPU:</b> {cpuUsage}% | '\
             f'<b>RAM:</b> {mem_p}% | '\
-            f'<b>DISK:</b> {disk}%\n━━━━━━━━━━━━━━━━━━━━\n'\
+            f'<b>DISK:</b> {disk}%\n━━━━━━━━━━━━━━━━━━━━━━━━\n'\
             f'<b>Physical Cores:</b> {p_core} | '\
-            f'<b>Total Cores:</b> {t_core}\n━━━━━━━━━━━━━━━━━━━━\n'\
+            f'<b>Total Cores:</b> {t_core}\n━━━━━━━━━━━━━━━━━━━━━━━━\n'\
             f'<b>SWAP:</b> {swap_t} | <b>Used:</b> {swap_p}%\n'\
-            f'<b>Memory Total:</b> {mem_t}\n'\
-            f'<b>Memory Free:</b> {mem_a} | '\
-            f'<b>Memory Used:</b> {mem_u}\n'
+            f'<b>RAM Total:</b> {mem_t}\n'\
+            f'<b>Free:</b> {mem_a} | '\
+            f'<b>Used:</b> {mem_u}\n'
     sendMessage(stats, context.bot, update.message)
 
 
